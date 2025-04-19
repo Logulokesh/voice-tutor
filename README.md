@@ -1,5 +1,5 @@
 
-# Voice Tutor – Open-Source, Offline Educational Assistant
+# Voice Tutor – Open-Source, Offline Educational Assistant Powered by Local LLM
 
 While tech giants pour AI into enterprise tools—think automated analytics or chatbots—let’s talk about something more grounded: helping kids learn when life’s too busy for one-on-one teaching. **Voice Tutor** is the answer—a **100% offline, open-source, voice-driven tutor** that’s free, flexible, and aligned with the **Victorian Curriculum F–10 Version 2.0** \[Victorian Curriculum and Assessment Authority\]. It’s not a locked-down app that costs as much as a new phone. It’s a build-it-yourself kit, ready for you to tweak, break, and learn from.
 
@@ -119,3 +119,20 @@ Licensed under the **MIT License**. Free to use, modify, and distribute.
 ## 🙌 Contributions
 
 We welcome pull requests, feedback, and ideas! Let’s make learning more accessible and natural together. 🌟
+
+## 🖼️ UI Screenshots
+
+Here are some screenshots of Voice Tutor in action:
+
+### 🧑‍🏫 Main Interface
+
+![VoiceTutor UI 001](screenshots/001%20-%20VoiceTutor%20Online%20Classroom%20-%20%5Blocalhost%5D.png)
+
+![VoiceTutor UI 002](screenshots/002%20-%20VoiceTutor%20Online%20Classroom%20-%20%5Blocalhost%5D.png)
+
+![VoiceTutor UI 003](screenshots/003%20-%20VoiceTutor%20Online%20Classroom%20-%20%5Blocalhost%5D.png)
+
+![VoiceTutor UI 005](screenshots/005%20-%20VoiceTutor%20Online%20Classroom%20-%20%5Blocalhost%5D.png)
+
+![VoiceTutor UI 006](screenshots/006%20-%20VoiceTutor%20Online%20Classroom%20-%20%5Blocalhost%5D.png)
+
