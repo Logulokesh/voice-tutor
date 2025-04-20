@@ -21,50 +21,31 @@ Voice Tutor supports both **voice** and **text-based** interactions, allowing le
 ```mermaid
 
 graph TD
-    A[User] -->|Voice Input| B[Microphone]
-    A -->|Text Input| C[UI: Text Input Field]
+    A[User 👤]
     
-    B -->|Audio Stream| D[Speech-to-Text Module]
-    D -->|Converted Text| E[Query Processor]
-    C -->|Typed Text| E
+    subgraph Input
+        A -->|Voice| B[Microphone 🎤]
+        A -->|Text| C[UI: Text Input ⌨️]
+        B --> D[Speech-to-Text 🎧]
+        D --> E[Query Processor ⚙️]
+        C --> E
+    end
     
-    E -->|Query| F[Ollama LLM]
-    F -->|Access| G[voicetutor_db.json]
-    F -->|Access| H[syllabus.json]
+    subgraph Processing
+        E --> F[Ollama LLM 🧠]
+        F --> G[voicetutor_db.json 💾]
+        F --> H[syllabus.json 📚]
+    end
     
-    G -->|Knowledge Base| F
-    H -->|Curriculum Data| F
-    
-    F -->|Response| I[Response Formatter]
-    I -->|Text Output| J[UI: Display]
-    I -->|Voice Output| K[Text-to-Speech Module]
-    
-    K -->|Audio Stream| L[Speakers/Headphones]
-    J -->|Visual Feedback| A
-    L -->|Audio Feedback| A
-
-    subgraph Core System
-        D
-        E
-        F
-        I
-        K
+    subgraph Output
+        F --> I[Response Formatter 🔧]
+        I --> J[UI: Display 🖥️]
+        I --> K[Text-to-Speech 🔊]
+        K --> L[Speakers 🎶]
+        J --> A
+        L --> A
     end
 
-    subgraph Data Storage
-        G
-        H
-    end
-
-    subgraph User Interface
-        C
-        J
-    end
-
-    subgraph Hardware
-        B
-        L
-    end
 ```
 
 ## Diagram Explanation
