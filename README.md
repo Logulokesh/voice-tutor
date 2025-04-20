@@ -17,6 +17,74 @@ Voice Tutor supports both **voice** and **text-based** interactions, allowing le
 - 🔊 **Multilingual Support**: Optional voice model expansions for different languages.
 - 📚 **Interactive Lessons**: Lessons designed for an engaging learning experience.
 
+
+```mermaid
+
+graph TD
+    A[User] -->|Voice Input| B[Microphone]
+    A -->|Text Input| C[UI: Text Input Field]
+    
+    B -->|Audio Stream| D[Speech-to-Text Module]
+    D -->|Converted Text| E[Query Processor]
+    C -->|Typed Text| E
+    
+    E -->|Query| F[Ollama LLM]
+    F -->|Access| G[voicetutor_db.json]
+    F -->|Access| H[syllabus.json]
+    
+    G -->|Knowledge Base| F
+    H -->|Curriculum Data| F
+    
+    F -->|Response| I[Response Formatter]
+    I -->|Text Output| J[UI: Display]
+    I -->|Voice Output| K[Text-to-Speech Module]
+    
+    K -->|Audio Stream| L[Speakers/Headphones]
+    J -->|Visual Feedback| A
+    L -->|Audio Feedback| A
+
+    subgraph Core System
+        D
+        E
+        F
+        I
+        K
+    end
+
+    subgraph Data Storage
+        G
+        H
+    end
+
+    subgraph User Interface
+        C
+        J
+    end
+
+    subgraph Hardware
+        B
+        L
+    end
+```
+
+## Diagram Explanation
+
+- **User**: Interacts via voice (microphone) or text (UI input field).
+- **Speech-to-Text Module**: Converts voice input to text using offline speech recognition.
+- **UI: Text Input Field**: Accepts typed queries from the user.
+- **Query Processor**: Receives text from either input method and sends it to the Ollama LLM.
+- **Ollama LLM**: Processes queries offline using a local language model, accessing:
+  - `voicetutor_db.json`: General knowledge base.
+  - `syllabus.json`: Curriculum data aligned with the Victorian Curriculum F–10 Version 2.0.
+- **Response Formatter**: Prepares the LLM's response for both text and voice output.
+- **Text-to-Speech Module**: Converts text responses to audio for hands-free feedback.
+- **UI: Display**: Shows text responses on the screen.
+- **Speakers/Headphones**: Plays audio responses for the user.
+- **Data Storage**: Stores offline knowledge and curriculum data.
+- **Hardware**: Includes microphone for input and speakers/headphones for output.
+
+This design ensures a fully offline, flexible, and accessible system for voice and text-based learning.
+
 ## 🧠 How It Works
 
 | Mode | Description | Icon |
