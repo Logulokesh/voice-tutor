@@ -12,6 +12,78 @@
 
 </div>
 
+<!-- Row 1: Identify the Challenge -->
+<table style="width: 100%; border-collapse: collapse; font-family: sans-serif;">
+  <tr>
+    <td style="width: 220px; text-align: center; vertical-align: top; padding: 40px;">
+      <img src="identify.png" width="220" alt="Identify" />
+    </td>
+    <td style="padding: 40px; vertical-align: top;">
+      <h2 style="color: #2563eb; display: flex; align-items: center; gap: 10px; margin-top: 0;">
+        <span style="font-size: 24px;">🔍</span> 1. Identify the Challenge
+      </h2>
+      <p>
+        Modern education often lacks personalized, one-on-one support due to time and resource constraints.
+        Many students—especially those in remote or under-resourced environments—miss out on tailored learning experiences.
+        Voice Tutor addresses this by offering an <strong>offline, open-source, AI-powered voice-driven educational assistant</strong>,
+        tailored to the <strong>Victorian Curriculum F–10 Version 2.0</strong>, making learning accessible, flexible, and adaptive for all learners.
+      </p>
+      <div style="font-size: 20px; text-align: center; margin-top: 15px;">🎯 🌐 🤖 🎓</div>
+    </td>
+  </tr>
+</table>
+
+<!-- Row 2: Engineer the Approach -->
+<table style="width: 100%; border-collapse: collapse; font-family: sans-serif; background-color: #f9f9f9;">
+  <tr>
+    <td style="padding: 40px; vertical-align: top;">
+      <h2 style="color: #16a34a; display: flex; align-items: center; gap: 10px; margin-top: 0;">
+        <span style="font-size: 24px;">⚙️</span> 2. Engineer the Approach
+      </h2>
+      <p>
+        Voice Tutor leverages a <strong>local Language Learning Model (LLM)</strong> via <strong>Ollama</strong>,
+        enabling real-time, context-aware responses without relying on cloud services.
+        The system integrates <strong>speech-to-text AI</strong> for voice input and <strong>text-to-speech AI</strong> for spoken feedback,
+        creating a seamless, hands-free learning environment.
+      </p>
+      <p>
+        This AI stack supports both <strong>voice and text-based interaction</strong>, ensuring inclusivity while maintaining
+        full functionality <strong>without internet access</strong>. By running AI locally, the system also ensures
+        <strong>privacy</strong>, <strong>speed</strong>, and <strong>customizability</strong>.
+      </p>
+      <div style="font-size: 20px; text-align: center; margin-top: 15px;">🧠 🎙️ 🔊 🔒 ⚡</div>
+    </td>
+    <td style="width: 220px; text-align: center; vertical-align: top; padding: 40px;">
+      <img src="support.png" width="220" alt="Support" />
+    </td>
+  </tr>
+</table>
+
+<!-- Row 3: Implement the Outcome -->
+<table style="width: 100%; border-collapse: collapse; font-family: sans-serif;">
+  <tr>
+    <td style="width: 220px; text-align: center; vertical-align: top; padding: 40px;">
+      <img src="empower.png" width="220" alt="Empower" />
+    </td>
+    <td style="padding: 40px; vertical-align: top;">
+      <h2 style="color: #dc2626; display: flex; align-items: center; gap: 10px; margin-top: 0;">
+        <span style="font-size: 24px;">✅</span> 3. Implement the Outcome
+      </h2>
+      <p>
+        The result is a fully functional, <strong>AI-driven tutoring system</strong> that runs locally on any device.
+        Students can learn at their own pace using <strong>natural voice commands</strong> or <strong>text-based chats</strong>,
+        receiving intelligent, curriculum-aligned explanations and feedback.
+      </p>
+      <p>
+        The use of <strong>on-device AI</strong> makes it ideal for diverse learners—including those with visual impairments,
+        auditory learning preferences, or limited digital access—offering a truly inclusive, self-paced, and adaptive learning experience.
+      </p>
+      <div style="font-size: 20px; text-align: center; margin-top: 15px;">💬 📱 ♿ 🚀 🎉</div>
+    </td>
+  </tr>
+</table>
+
+
 ---
 
 ## 🌟 Overview
