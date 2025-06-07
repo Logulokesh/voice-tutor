@@ -13,7 +13,9 @@
 [![100% Offline](https://img.shields.io/badge/100%25-OFFLINE-9C27B0?style=for-the-badge)](https://github.com)
 
 **🌟 A 100% offline, open-source, voice-driven tutor that's free, flexible, and aligned with the Victorian Curriculum F–10 Version 2.0 🌟**
-
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Logulokesh/KinAI-Mentor/refs/heads/main/screenshots/Logo-4.gif" alt="KinAi-Nexpatrol" width="100%" />
+</p>
 </div>
 
 ---
