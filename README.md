@@ -1,22 +1,29 @@
-# 🎓 KinAI-Mentor
-
 <div align="center">
 
-### *Open-Source, Offline Educational Assistant Powered by Local LLM*
+# 🎓⚡ KinAI-Mentor - AI Educational Assistant
+*Next-Gen Offline Learning & Intelligent Tutoring*
+
+**[ 🤖 AI-POWERED ] • [ 🎤 VOICE-DRIVEN ] • [ 🔒 PRIVACY-FIRST ]**
+
+![Python](https://img.shields.io/badge/Python-3776ab?style=for-the-badge&logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
+![Offline](https://img.shields.io/badge/100%25_OFFLINE-9C27B0?style=for-the-badge&logo=offline&logoColor=white)
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Logulokesh/KinAI-Mentor/refs/heads/main/screenshots/Logo-4.gif" alt="KinAi-Mentor" width="100%" />
+</p>
+
+<p align="center">
+  <strong>🧠 Local LLM • 🎯 Victorian Curriculum • 🔄 Speech Recognition • 🐍 Open Source</strong>
+</p>
 
 ---
 
-[![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io)
-[![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)](https://ollama.ai)
-[![MIT License](https://img.shields.io/badge/License-MIT-00C851?style=for-the-badge)](LICENSE)
-[![100% Offline](https://img.shields.io/badge/100%25-OFFLINE-9C27B0?style=for-the-badge)](https://github.com)
+*Transform education with cutting-edge AI that listens, teaches, and empowers*
 
-**🌟 A 100% offline, open-source, voice-driven tutor that's free, flexible, and aligned with the Victorian Curriculum F–10 Version 2.0 🌟**
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Logulokesh/KinAI-Mentor/refs/heads/main/screenshots/Logo-4.gif" alt="KinAi-Nexpatrol" width="100%" />
-</p>
 </div>
+
 
 ---
 
