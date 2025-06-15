@@ -37,217 +37,333 @@
 
 ---
 
-## 🌟 **Overview**
+## 🌟 Overview
 
-> **Why KinAI-Mentor?** While tech giants focus on enterprise AI tools, we're solving something fundamental: helping kids learn when life gets busy. 
+> **Why KinAI-Mentor?** While tech giants focus on enterprise solutions, we're addressing a fundamental need: helping students learn effectively when traditional support isn't available.
 
-**KinAI-Mentor** isn't just another educational app—it's a **100% offline, open-source, voice-driven tutor** that's:
-- 🆓 **Completely Free** - No subscriptions, no hidden costs
-- 🔧 **Fully Customizable** - Open-source and hackable
-- 📚 **Curriculum-Aligned** - Victorian Curriculum F–10 Version 2.0
-- 🎤 **Voice & Text Ready** - Multiple interaction modes
+**KinAI-Mentor** isn't just another educational app—it's a revolutionary **offline, voice-driven tutor** that brings personalized AI education to every student, regardless of their circumstances.
+
+### 🎯 Key Differentiators
+
+- **🆓 Completely Free** - No subscriptions, no hidden costs, no data collection
+- **🔧 Fully Open Source** - Hackable, customizable, and community-driven
+- **📚 Curriculum-Aligned** - Based on Victorian Curriculum F–10 Version 2.0 syllabus
+- **🎤 Multi-Modal Interface** - Voice, text, and visual interaction modes
+- **🌐 100% Offline** - Works without internet connectivity
+- **♿ Accessibility-First** - Designed for students with diverse needs
 
 ---
 
-## ⭐ **Key Features**
+## ⭐ Key Features
 
 <div align="center">
 
-| 🎤 **Voice Input** | 💬 **Chat Input** | 🗣️ **Voice Output** | 📃 **Text Display** |
-|:---:|:---:|:---:|:---:|
-| Speak your questions naturally | Type queries traditionally | Answers read aloud via TTS | Visual responses on screen |
-
-| 🎓 **Curriculum-Aligned** | 💻 **100% Offline** | 🛠️ **Open-Source** | 🔊 **Multilingual** |
-|:---:|:---:|:---:|:---:|
-| Victorian Curriculum F–10 V2.0 | No internet dependency | Free to modify & extend | Optional language models |
+| Feature | Description | Technology |
+|:--------|:------------|:-----------|
+| **🎤 Voice Input** | Speak questions naturally | Advanced speech recognition |
+| **💬 Text Chat** | Traditional typing interface | Streamlit UI components |
+| **🗣️ Voice Output** | Answers read aloud automatically | Local text-to-speech engine |
+| **📃 Visual Display** | Clear text responses on screen | Responsive web interface |
+| **🎓 Curriculum-Aligned** | Victorian Curriculum F–10 v2.0 compliant | Structured JSON database |
+| **💻 Fully Offline** | No internet dependency | Local LLM processing |
+| **🛠️ Open Source** | Free to modify and extend | MIT License |
+| **🌍 Multilingual Ready** | Expandable language support | Modular architecture |
 
 </div>
 
 ---
 
-## 🏗️ **System Architecture**
+## 🏗️ System Architecture
 
 ```mermaid
 graph TB
-    subgraph "🎯 User Interaction"
-        A[👤 User]
-        A -->|🎤 Voice| B[Microphone]
-        A -->|💬 Text| C[Text Input]
+    subgraph "🎯 User Interaction Layer"
+        A[👤 Student] 
+        A -->|🎤 Voice| B[🎙️ Microphone Input]
+        A -->|💬 Text| C[⌨️ Text Input]
     end
     
-    subgraph "🔄 Input Processing"
-        B --> D[🎧 Speech-to-Text]
-        C --> E[⚙️ Query Processor]
+    subgraph "🔄 Processing Engine"
+        B --> D[🎧 Speech-to-Text Processor]
+        C --> E[⚙️ Query Handler]
         D --> E
+        E --> F[🤖 Ollama LLM Engine]
     end
     
-    subgraph "🧠 AI Core"
-        E --> F[🤖 Ollama LLM]
-        F <--> G[💾 Knowledge Base]
-        F <--> H[📚 Curriculum Data]
+    subgraph "🧠 Knowledge Core"
+        F <--> G[💾 General Knowledge Base]
+        F <--> H[📚 Victorian Curriculum F–10 v2.0]
+        F <--> I[🎯 Learning Analytics]
     end
     
-    subgraph "📤 Output Generation"
-        F --> I[🔧 Response Formatter]
-        I --> J[🖥️ Text Display]
-        I --> K[🔊 Text-to-Speech]
-        K --> L[🎶 Audio Output]
+    subgraph "📤 Response Generation"
+        F --> J[🔧 Response Formatter]
+        J --> K[🖥️ Text Display]
+        J --> L[🔊 Text-to-Speech Engine]
+        L --> M[🎶 Audio Output]
     end
     
-    J --> A
-    L --> A
-    
-    style A fill:#e1f5fe
-    style F fill:#f3e5f5
-    style G fill:#e8f5e8
-    style H fill:#fff3e0
+    K --> A
+    M --> A
 ```
 
-### 📋 **How It Works**
+### 📋 Component Overview
 
-<details>
-<summary><b>🔍 Click to expand architecture details</b></summary>
-
-| Component | Function | Technology |
-|-----------|----------|------------|
-| **👤 User Interface** | Voice/text input handling | Streamlit + Speech Recognition |
-| **🎧 Speech Processing** | Voice-to-text conversion | Offline speech recognition |
-| **🧠 AI Engine** | Query processing & responses | Ollama LLM (local) |
-| **💾 Knowledge Base** | General learning content | JSON database |
-| **📚 Curriculum** | Victorian Curriculum alignment | Structured JSON |
+| Component | Function | Implementation |
+|-----------|----------|----------------|
+| **👤 User Interface** | Multi-modal input handling | Streamlit + Custom Components |
+| **🎧 Speech Processing** | Voice-to-text conversion | Offline speech recognition library |
+| **🧠 AI Engine** | Natural language processing | Ollama LLM (Llama 3) |
+| **💾 Knowledge Base** | General educational content | Structured JSON database |
+| **📚 Curriculum Engine** | Victorian F–10 v2.0 alignment | Curriculum-specific JSON |
 | **🔊 Audio Output** | Text-to-speech synthesis | Local TTS engine |
-
-</details>
-
----
-
-## 🎯 **Why Choose KinAI-Mentor?**
-
-<div align="center">
-
-| **🌟 Benefit** | **🔥 Why It Matters** |
-|:---|:---|
-| **♿ Accessible Design** | Supports auditory, visual, and diverse learners |
-| **🧠 Curriculum-Focused** | Aligned with Victorian Curriculum F–10 V2.0 |
-| **🔁 Multi-Modal** | Seamless voice ↔ text switching |
-| **📱 Hands-Free Learning** | Perfect for multitasking or accessibility needs |
-| **🌍 Privacy-First** | 100% offline - your data never leaves your device |
-| **🔧 Developer-Friendly** | Open-source, customizable, and extensible |
-| **⚡ No Dependencies** | Works without internet, subscriptions, or accounts |
-
-</div>
+| **🎯 Analytics** | Learning progress tracking | Local data storage |
 
 ---
 
-## 🛠️ **Quick Start**
+## 🎯 Why Choose KinAI-Mentor?
 
-### 📋 **Prerequisites**
+### 🌟 Educational Benefits
 
-<div align="center">
+| Benefit | Impact | Target Users |
+|:--------|:-------|:-------------|
+| **♿ Universal Accessibility** | Supports visual, auditory, and motor disabilities | Students with diverse needs |
+| **🧠 Curriculum Alignment** | Structured learning based on Victorian F–10 v2.0 | Victorian students & educators |
+| **🔄 Flexible Interaction** | Seamless voice ↔ text switching | All learning preferences |
+| **📱 Hands-Free Learning** | Perfect for multitasking students | Busy families & accessibility users |
+| **🔒 Privacy Protection** | Zero data collection or tracking | Privacy-conscious families |
+| **🌍 Offline Capability** | Works in areas with poor connectivity | Rural & underserved communities |
+| **🆓 Cost-Free Education** | No subscription or premium features | Low-income families |
 
-| Requirement | Version | Purpose |
-|:---:|:---:|:---:|
-| 🐍 **Python** | 3.8+ | Core runtime |
-| 🤖 **Ollama** | Latest | Local LLM |
-| 🎤 **Microphone** | Any | Voice input |
-| 🔊 **Audio Output** | Any | Voice responses |
+### 🚀 Technical Advantages
 
-</div>
+- **⚡ High Performance** - Local processing for instant responses
+- **🔧 Fully Customizable** - Open source architecture for modifications
+- **📱 Cross-Platform** - Works on Windows, macOS, and Linux
+- **🛡️ Secure by Design** - No external data transmission
+- **📈 Scalable** - Easy to extend with new subjects or languages
 
-### ⚡ **Installation**
+---
+
+## 🛠️ Quick Start Guide
+
+### 📋 System Requirements
+
+| Component | Minimum | Recommended | Purpose |
+|:----------|:--------|:------------|:--------|
+| **🐍 Python** | 3.8+ | 3.11+ | Core runtime environment |
+| **🤖 Ollama** | Latest | Latest | Local LLM processing |
+| **💾 RAM** | 8GB | 16GB+ | AI model performance |
+| **💿 Storage** | 10GB | 20GB+ | Models and data |
+| **🎤 Microphone** | Any USB/Built-in | High-quality | Voice input |
+| **🔊 Speakers/Headphones** | Any | Good quality | Audio output |
+
+### ⚡ Installation Steps
 
 ```bash
 # 1️⃣ Clone the repository
 git clone https://github.com/Logulokesh/kinai-mentor.git
 cd kinai-mentor
 
-# 2️⃣ Create virtual environment
-python3 -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+# 2️⃣ Create and activate virtual environment
+python3 -m venv kinai-env
+source kinai-env/bin/activate  # Windows: kinai-env\Scripts\activate
 
-# 3️⃣ Install dependencies
+# 3️⃣ Install Python dependencies
 pip install -r requirements.txt
 
-# 4️⃣ Setup Ollama
-# Download from https://ollama.ai
+# 4️⃣ Install and setup Ollama
+# Download from https://ollama.ai and install
 ollama pull llama3
 
-# 5️⃣ Launch KinAI-Mentor
+# 5️⃣ Verify installation
+python -c "import streamlit; print('✅ Streamlit ready')"
+ollama list  # Should show llama3 model
+
+# 6️⃣ Launch KinAI-Mentor
 streamlit run ui.py
 ```
 
-### 🚀 **Launch Commands**
+### 🚀 Launch Commands
 
 ```bash
-# Start Ollama server
+# Terminal 1: Start Ollama server
+ollama serve
+
+# Terminal 2: Run the AI model
 ollama run llama3
 
-# Launch KinAI-Mentor interface
+# Terminal 3: Launch KinAI-Mentor interface
 streamlit run ui.py
+```
+
+### 🔧 Configuration Options
+
+```python
+# config.py - Customize these settings
+OLLAMA_MODEL = "llama3"  # Change AI model
+VOICE_ENABLED = True     # Enable/disable voice features
+TTS_SPEED = 1.0         # Adjust speech speed
+CURRICULUM_VERSION = "VIC_F10_V2"  # Curriculum alignment
 ```
 
 ---
 
-## 📁 **Project Structure**
+## 📁 Project Structure
+
+```
+kinai-mentor/
+├── 📄 README.md              # Project documentation
+├── 📋 requirements.txt       # Python dependencies
+├── ⚙️ core_tutor.py         # Core AI logic & processing
+├── 🖥️ ui.py                 # Streamlit user interface
+├── 📚 syllabus.json         # Victorian Curriculum F–10 v2.0 data
+├── 📂 voicetutor_db.json    # General knowledge base
+├── 🔧 config.py             # Configuration settings
+├── 🎨 assets/               # Images and media
+├── 📊 data/                 # Curriculum and learning data
+├── 🧪 tests/               # Unit tests
+└── 📖 docs/                # Additional documentation
+```
+
+### 📄 File Descriptions
+
+| File | Purpose | Importance |
+|:-----|:--------|:-----------|
+| `core_tutor.py` | AI logic and response generation | 🔴 Critical |
+| `ui.py` | User interface and interaction | 🔴 Critical |
+| `syllabus.json` | Victorian Curriculum F–10 v2.0 structure | 🟡 Important |
+| `voicetutor_db.json` | General knowledge database | 🟡 Important |
+| `requirements.txt` | Python package dependencies | 🔴 Critical |
+
+---
+
+## 🛠️ Technology Stack
+
+### 🔧 Core Technologies
 
 <div align="center">
 
-| File | Purpose | Icon |
-|:---|:---|:---:|
-| `core_tutor.py` | Core AI logic & processing | ⚙️ |
-| `ui.py` | Streamlit user interface | 🖥️ |
-| `syllabus.json` | Victorian Curriculum data | 📚 |
-| `voicetutor_db.json` | Knowledge base | 📂 |
-| `requirements.txt` | Python dependencies | 📋 |
-| `README.md` | Documentation | 📖 |
+[![Python](https://img.shields.io/badge/Python_3.11-FFD43B?style=for-the-badge&logo=python&logoColor=blue)](https://python.org)
+[![Streamlit](https://img.shields.io/badge/Streamlit_1.28-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io)
+[![Ollama](https://img.shields.io/badge/Ollama_LLM-000000?style=for-the-badge&logo=ollama&logoColor=white)](https://ollama.ai)
+
+</div>
+
+### 🤖 AI & Audio Processing
+
+<div align="center">
+
+![Speech Recognition](https://img.shields.io/badge/SpeechRecognition-00D4AA?style=for-the-badge&logo=google&logoColor=white)
+![Text to Speech](https://img.shields.io/badge/pyttsx3_TTS-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![JSON](https://img.shields.io/badge/JSON_Database-000000?style=for-the-badge&logo=json&logoColor=white)
+
+</div>
+
+### 📚 Curriculum Integration
+
+- **Victorian Curriculum F–10 Version 2.0** - Complete syllabus alignment
+- **Subject Areas** - Mathematics, English, Science, Humanities
+- **Learning Progressions** - Foundation to Year 10 coverage
+- **Assessment Standards** - Achievement level mapping
+
+---
+
+## 🎓 Educational Alignment
+
+### 📚 Victorian Curriculum F–10 Version 2.0 Integration
+
+KinAI-Mentor is specifically designed to support the **Victorian Curriculum F–10 Version 2.0**, ensuring students receive curriculum-compliant educational assistance.
+
+#### 🎯 Covered Learning Areas
+
+| Learning Area | Year Levels | Key Features |
+|:--------------|:------------|:-------------|
+| **📝 English** | F-10 | Reading, writing, speaking, listening |
+| **🔢 Mathematics** | F-10 | Number, algebra, geometry, statistics |
+| **🔬 Science** | F-10 | Biological, chemical, physical, earth sciences |
+| **🌍 Humanities** | F-10 | History, geography, civics, economics |
+| **🎨 The Arts** | F-10 | Visual arts, music, drama, dance |
+| **💪 Health & PE** | F-10 | Personal health, physical activity |
+| **💻 Technologies** | F-10 | Digital technologies, design thinking |
+| **🗣️ Languages** | F-10 | Expandable language support |
+
+#### 🎯 Learning Progression Support
+
+- **Foundation Level** - Early childhood learning foundations
+- **Years 1-2** - Basic literacy and numeracy development
+- **Years 3-4** - Skill building and concept introduction
+- **Years 5-6** - Knowledge consolidation and application
+- **Years 7-8** - Advanced concept exploration
+- **Years 9-10** - Senior preparation and specialization
+
+---
+
+## 📸 Screenshots & Demo
+
+<div align="center">
+
+### 🖥️ Main Interface
+*Clean, intuitive design optimized for learning*
+
+![KinAI-Mentor Main Interface](https://raw.githubusercontent.com/Logulokesh/VICTutorAI-Offline-Educational-Assistant-Voice/refs/heads/main/screenshots/001%20-%20VoiceTutor%20Online%20Classroom%20-%20%5Blocalhost%5D.png)
+
+---
+
+### 💬 Interactive Learning Session
+*Real-time AI tutoring in action*
+
+![Interactive Learning](https://raw.githubusercontent.com/Logulokesh/VICTutorAI-Offline-Educational-Assistant-Voice/refs/heads/main/screenshots/002%20-%20VoiceTutor%20Online%20Classroom%20-%20%5Blocalhost%5D.png)
+
+---
+
+### 🎤 Voice Interaction Mode
+*Hands-free learning experience*
+
+![Voice Interaction](https://raw.githubusercontent.com/Logulokesh/VICTutorAI-Offline-Educational-Assistant-Voice/refs/heads/main/screenshots/003%20-%20VoiceTutor%20Online%20Classroom%20-%20%5Blocalhost%5D.png)
 
 </div>
 
 ---
 
-## 🛠️ **Tech Stack**
+## 🤝 Contributing to KinAI-Mentor
 
 <div align="center">
 
-### **Core Technologies**
+**🌟 Help us democratize education through AI! 🌟**
 
-[![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)](https://python.org)
-[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io)
-[![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)](https://ollama.ai)
-
-### **AI & Audio**
-
-![Speech Recognition](https://img.shields.io/badge/Speech_Recognition-00D4AA?style=for-the-badge&logo=google&logoColor=white)
-![Text to Speech](https://img.shields.io/badge/Text_to_Speech-4285F4?style=for-the-badge&logo=google&logoColor=white)
-![JSON](https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white)
+[![Contribute](https://img.shields.io/badge/Contributions-Welcome-brightgreen?style=for-the-badge&logo=github)](CONTRIBUTING.md)
+[![Issues](https://img.shields.io/badge/Report_Issues-Open-red?style=for-the-badge&logo=github)](https://github.com/Logulokesh/kinai-mentor/issues)
+[![Pull Requests](https://img.shields.io/badge/Pull_Requests-Welcome-blue?style=for-the-badge&logo=github)](https://github.com/Logulokesh/kinai-mentor/pulls)
 
 </div>
 
+### 🔧 How to Contribute
+
+1. **🍴 Fork** the repository on GitHub
+2. **🌿 Create** a feature branch: `git checkout -b feature/amazing-improvement`
+3. **💻 Make** your changes with clear, commented code
+4. **✅ Test** your changes thoroughly
+5. **📝 Document** new features or changes
+6. **✉️ Commit** with descriptive messages: `git commit -m 'Add voice speed control'`
+7. **🚀 Push** to your branch: `git push origin feature/amazing-improvement`
+8. **📬 Submit** a Pull Request with detailed description
+
+### 🎯 Contribution Areas
+
+- **🧠 AI Model Integration** - Add new LLM support
+- **🎤 Voice Processing** - Improve speech recognition
+- **📚 Curriculum Expansion** - Add more subjects/regions  
+- **♿ Accessibility Features** - Enhance inclusive design
+- **🌍 Internationalization** - Add language support
+- **🎨 UI/UX Improvements** - Better user experience
+- **📱 Mobile Optimization** - Responsive design
+- **🧪 Testing & QA** - Improve reliability
+- **📖 Documentation** - Better guides and tutorials
+
 ---
 
-## 🤝 **Contributing**
-
-<div align="center">
-
-**🌟 Help us make learning more accessible! 🌟**
-
-[![Contribute](https://img.shields.io/badge/Contribute-Welcome-brightgreen?style=for-the-badge)](CONTRIBUTING.md)
-[![Issues](https://img.shields.io/badge/Issues-Open-red?style=for-the-badge)](https://github.com/Logulokesh/kinai-mentor/issues)
-[![PRs](https://img.shields.io/badge/PRs-Welcome-blue?style=for-the-badge)](https://github.com/Logulokesh/kinai-mentor/pulls)
-
-</div>
-
-### 🔧 **How to Contribute**
-
-1. 🍴 **Fork** the repository
-2. 🌿 **Create** a feature branch (`git checkout -b feature/amazing-feature`)
-3. ✅ **Commit** your changes (`git commit -m 'Add amazing feature'`)
-4. 🚀 **Push** to the branch (`git push origin feature/amazing-feature`)
-5. 📬 **Open** a Pull Request
-
----
-
-## 📜 **License**
+## 📜 License & Legal
 
 <div align="center">
 
@@ -257,53 +373,54 @@ streamlit run ui.py
 
 </div>
 
+### 🔓 Open Source Freedom
+
+- ✅ **Commercial Use** - Use in commercial projects
+- ✅ **Modification** - Adapt to your needs
+- ✅ **Distribution** - Share with others
+- ✅ **Private Use** - Use internally
+- ✅ **Patent Use** - No patent restrictions
+
+### 📋 Attribution Requirements
+
+- Include original license text
+- Credit original authors
+- Note any modifications made
+
 ---
 
-## 📸 **Screenshots**
+## 🎉 Acknowledgments
+
+### 🙏 Special Thanks
+
+- **Victorian Curriculum Authority** - For curriculum standards
+- **Ollama Team** - For local LLM technology
+- **Streamlit Community** - For the amazing framework
+- **Open Source Contributors** - For inspiration and code
+- **Educators & Students** - For feedback and testing
+
+---
 
 <div align="center">
 
-### 🖥️ **Main Interface**
-*Clean, intuitive design for seamless learning*
+## 🌟 Join the Educational Revolution
 
-![KinAI-Mentor Main Interface](https://raw.githubusercontent.com/Logulokesh/VICTutorAI-Offline-Educational-Assistant-Voice/refs/heads/main/screenshots/001%20-%20VoiceTutor%20Online%20Classroom%20-%20%5Blocalhost%5D.png)
+**KinAI-Mentor** represents the future of personalized, accessible education. By combining cutting-edge AI with offline capabilities and curriculum alignment, we're creating learning opportunities for every student, regardless of their circumstances.
 
----
+### 🚀 Get Started Today
 
-### 💬 **Interactive Learning**
-*Real-time conversations with AI tutor*
-
-![Interactive Learning](https://raw.githubusercontent.com/Logulokesh/VICTutorAI-Offline-Educational-Assistant-Voice/refs/heads/main/screenshots/002%20-%20VoiceTutor%20Online%20Classroom%20-%20%5Blocalhost%5D.png)
+```bash
+git clone https://github.com/Logulokesh/kinai-mentor.git && cd kinai-mentor && pip install -r requirements.txt && streamlit run ui.py
+```
 
 ---
 
-### 🎤 **Voice Interaction**
-*Hands-free learning experience*
+**Made with ❤️ for accessible, inclusive education**
 
-![Voice Interaction](https://raw.githubusercontent.com/Logulokesh/VICTutorAI-Offline-Educational-Assistant-Voice/refs/heads/main/screenshots/003%20-%20VoiceTutor%20Online%20Classroom%20-%20%5Blocalhost%5D.png)
+*Empowering learners through intelligent, offline AI tutoring*
 
----
-
-### 📚 **Curriculum Content**
-*Victorian Curriculum F–10 Version 2.0 aligned*
-
-![Curriculum Content](https://raw.githubusercontent.com/Logulokesh/VICTutorAI-Offline-Educational-Assistant-Voice/refs/heads/main/screenshots/005%20-%20VoiceTutor%20Online%20Classroom%20-%20%5Blocalhost%5D.png)
-
----
-
-### 🎯 **Learning Dashboard**
-*Track progress and engagement*
-
-![Learning Dashboard](https://raw.githubusercontent.com/Logulokesh/VICTutorAI-Offline-Educational-Assistant-Voice/refs/heads/main/screenshots/006%20-%20VoiceTutor%20Online%20Classroom%20-%20%5Blocalhost%5D.png)
-
-</div>
-
----
-
-**Made with ❤️ for accessible education**
-
----
-
-*KinAI-Mentor - Empowering learners through intelligent, offline AI tutoring*
+[![GitHub Stars](https://img.shields.io/github/stars/Logulokesh/kinai-mentor?style=social)](https://github.com/Logulokesh/kinai-mentor)
+[![GitHub Forks](https://img.shields.io/github/forks/Logulokesh/kinai-mentor?style=social)](https://github.com/Logulokesh/kinai-mentor)
+[![GitHub Issues](https://img.shields.io/github/issues/Logulokesh/kinai-mentor?style=social)](https://github.com/Logulokesh/kinai-mentor/issues)
 
 </div>
