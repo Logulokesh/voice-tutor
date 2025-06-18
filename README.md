@@ -415,12 +415,22 @@ git clone https://github.com/Logulokesh/kinai-mentor.git && cd kinai-mentor && p
 
 ---
 
-**Made with ❤️ for accessible, inclusive education**
+<div align="center">
 
-*Empowering learners through intelligent, offline AI tutoring*
+[![Contributors](https://contrib.rocks/image?repo=Logulokesh/KinAI-Ecosystem)](https://github.com/Logulokesh/KinAI-Ecosystem/graphs/contributors)
 
-[![GitHub Stars](https://img.shields.io/github/stars/Logulokesh/kinai-mentor?style=social)](https://github.com/Logulokesh/kinai-mentor)
-[![GitHub Forks](https://img.shields.io/github/forks/Logulokesh/kinai-mentor?style=social)](https://github.com/Logulokesh/kinai-mentor)
-[![GitHub Issues](https://img.shields.io/github/issues/Logulokesh/kinai-mentor?style=social)](https://github.com/Logulokesh/kinai-mentor/issues)
+</div>
+
+---
+
+## 📄 License
+
+Yes, it’s completely free — just like a gesture of support 🤝, a nod of appreciation 👍, or a reassuring smile 😊.
+
+---
+
+<div align="center">
+
+**Built with passion ❤️ for privacy, intelligence, and automation**
 
 </div>
